@@ -1,0 +1,16 @@
+{
+  "name": "ct-verify-email",
+  "version": "1.0.0",
+  "description": "verify commercetools user email",
+  "main": "index.js",
+  "repository": "https://github.com/panuru/ct-verify-email.git",
+  "author": "Maria <maria.kuzovchikova@flaconi.de>",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+    "nodejs-base64-encode": "^1.1.0",
+    "prompts": "^2.3.2"
+  }
+}
