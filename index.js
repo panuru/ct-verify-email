@@ -26,7 +26,7 @@ const fetchToken = (project, clientId, clientSecret) => {
 
 const fetchCustomerByEmail = (project, token, email) => {
   return fetch(
-    `https://api.sphere.io/${project}/customers/?where=email%20%3D%20"${email}"`,
+    `https://api.sphere.io/${project}/customers/?where=email%20%3D%20"${encodeURIComponent(email)}"`,
     {
       method: 'GET',
       headers: {
